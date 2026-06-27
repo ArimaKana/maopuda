@@ -1,0 +1,75 @@
+// out:false
+page{
+  height: 100%;
+}
+.message {
+  .notice{
+    display: flex;
+    widows: 750px;
+    padding: 40px;
+    .col{
+      flex: 1;
+      padding:0 40px;
+      // display: flex;
+      border-right: 1px solid #eee;
+      position: relative;
+      &:last-child{
+        border-right: none;
+      }
+      .icon{
+        width: 80px;
+        height: 80px;
+        font-size: 40px;
+        font-weight: 700;
+        color: #fff;
+        background: linear-gradient(-45deg, #FEC351, #FC9028);
+        border-radius: 50%;
+        line-height: 80px;
+        text-align: center;
+        margin: 0 auto;
+        &.like{
+          background: linear-gradient(-45deg, #FC9FAF, #EF4970);
+        }
+        &.fans{
+          background: linear-gradient(-45deg, #FFEC74, #FCCA2A);
+        }
+      }
+      .text{
+        font-size: 30px;
+        font-weight: 700;
+        text-align: center;
+        margin-top: 10px;
+      }
+      .dot{
+        height: 36px;
+        line-height: 36px;
+        background: #EF4970;
+        color: #fff;
+        font-size: 28px;
+        border-radius: 36px;
+        padding: 0 10px;
+        position: absolute;
+        top: 0;
+        left: 60%;
+      }
+    }
+    &.hide{
+      display: none;
+    }
+  }
+  .at-list__item--thumb .item-thumb{
+    width: 80px;
+    height: 80px;
+    .item-thumb__info{
+      border-radius: 50%;
+    }
+  }
+  .no-more{
+    text-align:center;
+    color:#666;
+    padding: 200px 0;
+    .icon{
+      font-size: 80px;
+    }
+  }
+}

@@ -1,0 +1,46 @@
+// out:false
+.container {
+  padding-bottom: 200px;
+  width: 750px;
+  overflow: hidden;
+  .index-filter{
+    height: 80px;
+    width: 750px;
+    background: #fefefe;
+    display: flex;
+    &.hide{
+      display: none;
+    }
+    .index-region{
+      width: 200px;
+      height: 80px;
+      font-size: 32px;
+      line-height: 80px;
+      text-align: center;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      .icon{
+        font-size: 32px;
+        display: inline;
+      }
+    }
+    .toSend{
+      height: 80px;
+      background: #c3d25b;
+      color: #fff;
+      line-height: 80px;
+      text-align: center;
+      flex: 1;
+      font-size: 32px;
+    }
+  }
+  .no-more{
+    text-align:center;
+    color:#666;
+    padding: 200px 0;
+    .icon{
+      font-size: 80px;
+    }
+  }
+}

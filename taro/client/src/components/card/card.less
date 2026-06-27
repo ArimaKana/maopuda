@@ -1,0 +1,58 @@
+// out:false
+.catCard{
+  margin: 20px;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  background: #fff;
+  .cardImage{
+    display: block;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+  .basicInfo{
+    flex: 1;
+    margin-left: 20px;
+    .chat{
+      font-size: 34px;
+      font-weight: 700;
+      margin-bottom: 5px;
+    }
+    .basic{
+      font-size: 28px;
+      display: flex;
+      .sex{
+        padding:3px 10px;
+        font-size: 30px;
+        color: #fff;
+        border-radius: 7px;
+        margin-right: 10px;
+        font-weight: 700;
+        &.icon-nan{
+          background: #88caf3;
+        }
+        &.icon-nv{
+          background: #ffa4a7;
+        }
+      }
+    }
+    .fans{
+      font-size: 28px;
+      color: #333;
+      margin-bottom: 10px;
+    }
+  }
+  .follow{
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #51A9FC;
+    background: #fff;
+    border-radius: 40px;
+    border: 1px solid #51A9FC;
+    font-size: 28px;
+    padding: 0 20px;
+    margin-top: 55px;
+  }
+}

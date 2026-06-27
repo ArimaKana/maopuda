@@ -1,0 +1,57 @@
+// 云函数入口文件
+const cloud = require('wx-server-sdk')
+
+// 与小程序端一致，均需调用 init 方法初始化
+cloud.init()
+
+// 可在入口函数外缓存 db 对象
+const db = cloud.database()
+
+// 数据库查询更新指令对象
+const _ = db.command
+
+// 云函数入口函数
+exports.main = async (event, context) => {
+  const { OPENID } = cloud.getWXContext()
+  let record
+  try {
+    const querResult = await db.collection('user')
+      .doc(OPENID)
+      .get()
+    record = querResult.data
+  } catch (err) {
+    // 用户未注册
+  }
+  if (record) {
+    await db.collection('user')
+      .doc(OPENID)
+      .update({
+        data: {
+          info: event.info
+        }
+      })
+    return {
+      success: true,
+      login: true,
+      mobile: record.mobile
+    }
+  } else {
+    // 创建新的用户记录
+    await db.collection('user').add({
+      data: {
+        _id: OPENID,
+        // 这里指定了 _openid，因在云函数端创建的记录不会默认插入用户 openid，如果是在小程序端创建的记录，会默认插入 _openid 字段
+        _openid: OPENID,
+        info: event.info,
+        mobile:'',
+        time: new Date().getTime(),
+        role: 1 //1:注册用户 2:管理员 -1:黑名单
+      }
+    })
+
+    return {
+      success: true,
+      created: true,
+    }
+  }
+}

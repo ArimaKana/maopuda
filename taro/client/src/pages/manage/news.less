@@ -1,0 +1,68 @@
+// out:false
+page{
+  height: 100%;
+}
+.allNews {
+  background: #f8f8f8;
+  width: 750px;
+  min-height: 100%;
+  padding:20px;
+  .my-card{
+    position: relative;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 5px 40px rgba(0, 0, 0, 0.08);
+    .card-avatar{
+      width: 120px;
+      height: 120px;
+      border-radius: 8rpx;
+      box-shadow: 0 0 50rpx 0 rgba(0, 0, 0, 0.05);
+      display: block;
+    }
+    .card-title{
+      font-size: 36px;
+      font-weight: 700;
+      position: absolute;
+      top: 35px;
+      left: 180px;
+      line-height: 1;
+      .title-text{
+        max-width: 270px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        float: left;
+      }
+      span{
+        margin-left: 5px;
+        display: block;
+        float: left;
+        font-weight: 400;
+        color: #51A9FC;
+      }
+    }
+    .at-article__info{
+      position: absolute;
+      top: 90px;
+      left: 180px;
+      margin: 0;
+    }
+    .card-btn{
+      margin-top: 20px;
+      margin-right: 20px;
+      display: inline-block;
+      &.card-btn-del{
+        background: #ff4a4a;
+        border: 1PX solid #ff4a4a;
+      }
+    }
+    .card-delete{
+      font-size: 40px;
+      position: absolute;
+      color: red;
+      top: 30px;
+      right: 30px;
+    }
+  }
+}

@@ -1,0 +1,323 @@
+// out:false
+page{
+  height: 100%;
+}
+.me {
+  background: #f2f2f2;
+  padding-bottom: 200px;
+  width: 750px;
+  min-height: 100%;
+  position: relative;
+  .me-box {
+    position: relative;
+    background: url(https://6d61-maopuda-sv4uw-1300869164.tcb.qcloud.la/app/bg.jpg?sign=47131264a20603723535c01c88181de3&t=1577602586) center top/100% no-repeat;
+    .me-profile {
+      padding: 20px;
+      position: relative;
+      font-size: 0;
+      display: flex;
+      .avatar {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-right: 20px;
+      }
+      .info{
+        flex: 1;
+        .name {
+          font-size: 40px;
+          font-weight: bolder;
+          width: 450px;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          height: 40px;
+          line-height: 40px;
+          margin-top: 20px;
+        }
+        .setting {
+          margin-top: 5px;
+          height: 60px;
+          line-height: 60px;
+          display: inline-block;
+          color: #999;
+          font-size: 28px;
+          padding: 0;
+          background: transparent;
+          &:hover{
+            background: transparent;
+            color: #666;
+          }
+          .icon {
+            font-size: 30px;
+            display: inline-block;
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+    .add-card{
+      margin: 20px;
+      border-radius: 20px;
+      background: #fff url(https://6d61-maopuda-sv4uw-1300869164.tcb.qcloud.la/app/addcard.jpg?sign=e656b0332999d53e3129991b99ea6d06&t=1578477711) right bottom/contain no-repeat;
+      padding: 40px 40px 100px;
+      .main{
+        font-size: 34px;
+        font-weight: 700;
+      }
+      .sub{
+        font-size: 28px;
+        color: #666;
+      }
+    }
+    .myCard{
+      .card{
+        margin: 20px;
+        border-radius: 20px;
+        background: #fff url(https://6d61-maopuda-sv4uw-1300869164.tcb.qcloud.la/app/card.png?sign=6a97d28f0c66a0f33a4acb055bdf99f5&t=1578738423) right top/contain no-repeat;
+        padding: 40px;
+        display: flex;
+        &.hide{
+          display: none;
+        }
+        .cardImage{
+          display: block;
+          width: 150px;
+          height: 150px;
+          border-radius: 50%;
+        }
+        .info{
+          flex: 1;
+          .chat{
+            font-size: 40px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            .tip{
+              font-size: 28px;
+              color: #ccc;
+              display: inline;
+              font-weight: normal;
+            }
+          }
+          .basic{
+            font-size: 28px;
+            display: flex;
+            margin-bottom: 40px;
+            .sex{
+              padding:3px 10px;
+              font-size: 30px;
+              color: #fff;
+              border-radius: 7px;
+              margin-right: 10px;
+              font-weight: 700;
+              &.icon-nan{
+                background: #88caf3;
+              }
+              &.icon-nv{
+                background: #ffa4a7;
+              }
+            }
+            .age{
+              margin-right: 10px;
+            }
+          }
+          .fans{
+            font-size: 28px;
+            color: #333;
+            margin-top: 5px;
+          }
+        }
+      }
+      .another{
+        margin: 20px;
+        border-radius: 20px;
+        background: #fff;
+        padding: 10px;
+        text-align: center;
+        font-size: 28px;
+        color: #666;
+      }
+      .anotherList{
+        margin: 20px;
+        text-align: center;
+        font-size: 28px;
+        color: #666;
+        display: flex;
+        .fold{
+          border-radius: 20px;
+          background: #fff;
+          margin-right: 20px;
+          padding: 10px 30px;
+          .icon{
+            font-size: 28px;
+            display: inline;
+          }
+        }
+        .add{
+          border-radius: 20px;
+          background: #fff;
+          flex: 1;
+          padding: 10px;
+        }
+      }
+    }
+    .order{
+      margin: 20px;
+      border-radius: 20px;
+      background: #fff;
+      .order-top{
+        display: flex;
+        border-bottom: 1px solid #eee;
+        padding: 20px;
+        .order-title{
+          font-size: 32px;
+          font-weight: 700;
+        }
+        .order-jump{
+          font-size: 28px;
+          color: #aaa;
+          flex:1;
+          text-align: right;
+        }
+      }
+      .order-filter{
+        display: flex;
+        padding: 30px 20px;
+        .order-item{
+          flex: 1;
+          text-align: center;
+          .icon{
+            font-size: 50px;
+            color: #51A9FC;
+          }
+          .order-status{
+            font-size: 28px;
+            color: #666;
+          }
+        }
+      }
+    }
+    .adopt{
+      margin: 20px;
+      display: flex;
+      .adopt-item{
+        flex: 1;
+        text-align: center;
+        border-radius: 20px;
+        background: #fff;
+        margin-right: 20px;
+        padding: 20px 0;
+        &:last-child{
+          margin-right: 0;
+        }
+        .num{
+          font-size: 50px;
+          color: #51A9FC;
+        }
+        .adopt-status{
+          font-size: 28px;
+          color: #666;
+        }
+      }
+    }
+    .cart{
+      margin: 20px;
+      border-radius: 20px;
+      background: #fff;
+      .cart-top{
+        display: flex;
+        padding: 20px;
+        .cart-title{
+          font-size: 32px;
+          font-weight: 700;
+        }
+        .cart-jump{
+          font-size: 28px;
+          color: #aaa;
+          flex:1;
+          text-align: right;
+        }
+      }
+      .cart-filter{
+        border-top: 1px solid #eee;
+        .good-detail{
+          position: relative;
+          display: flex;
+          .detail-img{
+            float: left;
+            width: 140px;
+            height: 140px;
+            margin: 20px;
+            border-radius: 10px;
+          }
+          .good-info{
+            flex: 1;
+            padding-right: 30px;
+            .good-name{
+              font-size: 28px;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              display: -webkit-box;
+              -webkit-line-clamp: 2;
+              line-clamp: 2;
+              -webkit-box-orient: vertical;
+              margin-top: 25px;
+              font-weight: 700;
+            }
+            .good-prize{
+              color: red;
+              font-size: 32px;
+              height: 50px;
+              line-height: 50px;
+              margin-top: 10px;
+              .good-count{
+                display: inline;
+                font-size: 28;
+                color: #333;
+                margin-left: 20px;
+              }
+            }
+          }
+        }
+        .more{
+          border-top: 1px solid #eee;
+          color: #aaa;
+          font-size: 28px;
+          padding: 20px;
+        }
+      }
+    }
+    .contact{
+      margin: 20px;
+      border-radius: 20px;
+      background: #fff;
+      padding:30px;
+      height: auto;
+      line-height: 1;
+      border: none;
+      text-align: center;
+      .icon{
+        font-size: 40px;
+        display: inline;
+        color: #51A9FC;
+      }
+      .name{
+        margin-left: 10px;
+        font-size: 32px;
+        display: inline;
+      }
+    }
+    .list{
+      border-radius: 20px;
+      overflow: hidden;
+      margin: 20px;
+      .at-list::after{
+        display: none;
+      }
+    }
+    .hide{
+      display: none;
+    }
+  }
+}

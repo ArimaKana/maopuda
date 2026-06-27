@@ -1,0 +1,73 @@
+// out:false
+.adoptCard {
+  margin-top: 40px;
+  width: 694px;
+  height: 200px;
+  margin: 28px;
+  position: relative;
+  overflow: hidden;
+  .cardImage {
+    width: 305px;
+    margin-bottom: 20px;
+    height: 200px;
+    display: block;
+    border-radius: 15px;
+  }
+  .des-box{
+    width: 370px;
+    height: 200px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    .title {
+      font-size: 32px;
+      font-weight: bolder;
+      color: #333;
+      margin-bottom: 5px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      margin-top:10px;
+    }
+    .desc{
+      padding-right: 10px;
+      font-size: 30px;
+      color: #999;
+      margin-bottom: 5px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      line-clamp: 2;
+      -webkit-box-orient: vertical;
+    }
+    .tool {
+      font-size: 0;
+      .source {
+        font-size: 26px;
+        color: #666;
+        float: left;
+        height: 50px;
+        line-height: 50px;
+        .icon-location {
+          font-size: 36px;
+          display: inline-block;
+          transform: translateY(4px);
+        }
+      }
+      .pills{
+        float: left;
+        margin-left: 10px;
+        height: 40px;
+        line-height: 40px;
+        border-radius: 10px;
+        padding: 0 10px;
+        font-size: 28px;
+        background: #f2f9fe;
+        color: #51A9FC;
+        font-weight: 700;
+        transform: translateY(8px);
+      }
+    }
+  }
+}

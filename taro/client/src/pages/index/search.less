@@ -1,0 +1,42 @@
+// out:false
+page{
+  height: 100%;
+}
+.search {
+  padding-bottom: 200px;
+  background: #f8f8f8;
+  width: 750px;
+  min-height: 100%;
+  .at-search-bar{
+    background: #51A9FC;
+    padding:0 18px 20px 28px;
+    &::after{
+      border-bottom-width:0;
+    }
+    .at-search-bar__action{
+      border-radius: 30px;
+    }
+  }
+  .index-list{
+  }
+
+  .dynamic-list{
+    display: flex;
+    flex-wrap:wrap;
+    padding: 10px;
+  }
+  .item-list{
+    width: 750px;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .no-more{
+    text-align:center;
+    color:#666;
+    padding: 200px 0;
+    .icon{
+      font-size: 80px;
+    }
+  }
+}

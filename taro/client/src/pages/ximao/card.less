@@ -1,0 +1,137 @@
+// out:false
+page{
+  height: 100%;
+}
+.card {
+  background: #f8f8f8;
+  padding: 0;
+  width: 750px;
+  min-height: 100%;
+  padding-bottom: 140px;
+  .catInfo{
+    background: #51A9FC;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 40px;
+    color: #fff;
+    position: relative;
+    .row{
+      display: flex;
+      padding-bottom: 20px;
+      .cardImage{
+        display: block;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+      }
+      .info{
+        flex: 1;
+        margin-left: 40px;
+        padding-top: 10px;
+        .chat{
+          font-size: 40px;
+          font-weight: 700;
+          margin-bottom: 10px;
+          display: flex;
+        }
+        .basic{
+          font-size: 28px;
+          display: flex;
+          margin-bottom: 40px;
+          .sex{
+            padding:3px 10px;
+            font-size: 30px;
+            border-radius: 7px;
+            margin-right: 10px;
+            font-weight: 700;
+            &.icon-nan{
+              background: #88caf3;
+            }
+            &.icon-nv{
+              background: #ffa4a7;
+            }
+          }
+          .age{
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+    .brief{
+      font-size: 28px;
+      margin-bottom: 5px;
+    }
+    .fans{
+      font-size: 28px;
+      .num{
+        font-size: 38px;
+        display: inline;
+        font-weight: 700;
+        margin-right: 10px;
+      }
+    }
+    .rightBtn{
+      position: absolute;
+      bottom: 40px;
+      right: 40px;
+      display: flex;
+      flex-direction:column;
+      // justify-content:flex-end;
+      align-items:flex-end;
+      .shareQR{
+        width: 60px;
+        height: 60px;
+        text-align: center;
+        line-height: 60px;
+        background: #fff;
+        color: #51A9FC;
+        font-size: 40px;
+        border-radius: 50%;
+        margin-top: 20px;
+      }
+      .share{
+        width: 60px;
+        height: 60px;
+        text-align: center;
+        line-height: 60px;
+        background: #fff;
+        color: #51A9FC;
+        border-radius: 50%;
+        padding: 0;
+        border: none;
+        margin: 20px 0 0;
+        .icon{
+          font-size: 40px;
+        }
+      }
+      .follow{
+        background: #fff;
+        color: #51A9FC;
+        font-size: 28px;
+        border-radius: 60px;
+        padding: 0 15px;
+        height: 60px;
+        line-height: 60px;
+        margin-top: 20px;
+      }
+    }
+  }
+  .index-list{
+    display: flex;
+    flex-wrap:wrap;
+    padding:0 10px;
+  }
+  .no-more{
+    text-align:center;
+    color:#666;
+    padding: 200px 0;
+    .icon{
+      font-size: 80px;
+    }
+  }
+  .canvas{
+    position: fixed;
+    top:-2000px;
+    left:-2000px;
+  }
+}

@@ -1,0 +1,370 @@
+// out:false
+.container {
+  padding-bottom: 200px;
+  width: 750px;
+  overflow: hidden;
+  .index-header{
+    // background: #51A9FC;
+    position: relative;
+    margin-bottom: 20px;
+    .index-region{
+      max-width: 230px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      height: 70px;
+      border-radius: 70px;
+      // border:1px solid #eee;
+      line-height: 70px;
+      padding: 0 30px;
+      font-size: 34px;
+      position: absolute;
+      top: 0;
+      left: 20px;
+      color: #fff;
+      background: rgba(0,0,0,.1);
+      box-shadow: 0 0 1px 0 rgba(255,255,255,0.3);
+      .icon-location{
+        display: inline-block;
+        font-size: 34px;
+      }
+    }
+    &:after{
+      content: '';
+      width: 140%;
+      height: 400px;
+      position: absolute;
+      left: -20%;
+      top: 0;
+      z-index: -1;
+      border-radius: 0 0 70% 70%;
+      background: linear-gradient(45deg, #88caf3, #51A9FC);
+      // background: #51A9FC;
+    }
+    .index-title{
+      width: 180px;
+      height: 80px;
+      margin: 0 auto;
+      background: url(https://6d61-maopuda-sv4uw-1300869164.tcb.qcloud.la/app/mpd-logo.png?sign=3a8bf46c97e55660c989f057eadcbe51&t=1578856252) center center/contain no-repeat;
+    }
+  }
+  .at-search-bar{
+    background: transparent;
+    padding:0 18px 12px 28px;
+    &::after{
+      border-bottom-width:0;
+    }
+    .at-search-bar__action{
+      border-radius: 30px;
+    }
+  }
+  .index-slide{
+    height: 250px;
+    margin: 10px 28px;
+    box-shadow: 0 5px 40px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    .newsCover{
+      display: block;
+      width: 694px;
+      height: 250px;
+      border-radius: 20px;
+    }
+  }
+  .mainMenu{
+    width: 750px;
+    display: flex;
+    margin-bottom: 10px;
+    .menuItem{
+      flex: 1;
+      margin: 20px 0 0 40px;
+      font-size: 0;
+      &:last-child{
+        margin-right: 40px;
+      }
+      .menuImage{
+        width: 100%;
+        max-height: 150px;
+      }
+      .menuText{
+        font-size: 32px;
+        font-weight: 700;
+        text-align: center;
+        margin-top: 10px;
+      }
+    }
+  }
+  .part{
+    font-size: 28px;
+    padding: 20px 0;
+    &.texture{
+      background: linear-gradient(-45deg, #fff 40%, #e1f2fd 0, #e1f2fd 50%, #fff 0, #fff 90%, #e1f2fd 0); 
+      background-size: 10px 10px;
+      box-shadow: 0 5px 40px rgba(137, 203, 244, 0.1) inset;
+    }
+    .partTitle{
+      display: flex;
+      padding: 0 28px;
+      .text{
+        flex: 1;
+        font-weight: 700;
+        .icon{
+          font-size: 28px;
+          display: inline;
+          margin-right: 5px;
+        }
+      }
+      .moreText{
+        flex: 1;
+        text-align: right;
+        font-size: 28px;
+        color: #7c7153;
+      }
+    }
+  }
+  .dynamic{
+    display: flex;
+    overflow-x: auto;
+    padding-top: 20px;
+    .dynamicCard{
+      width: 400px;
+      background: #fff;
+      margin-left: 28px;
+      border-radius: 20px;
+      display: flex;
+      flex-direction:column;
+      &:last-child{
+        margin-right: 28px;
+      }
+      .cardImage{
+        display: block;
+        width: 400px;
+        height: 300px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+      }
+      .chat{
+        flex:1;
+        margin-top: 20px;
+        padding:0 20px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        color: #666;
+        font-size: 30px;
+      }
+      .topic{
+        flex:1;
+        font-size: 24px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        color: #666;
+        margin-top: 10px;
+        padding:0 20px;
+        .icon{
+          font-size: 30px;
+          color: #b6a985;
+          display: inline;
+          margin-right: 5px;
+        }
+      }
+      .opt{
+        display: flex;
+        padding:10px 20px 20px;
+        font-size: 28px;
+        .comment{
+          flex: 1;
+          font-size: 28px;
+          color: #999;
+        }
+        .icon{
+          display: block;
+          font-size: 40px;
+          &.icon-heart-fill{
+            color: #b6a985;
+          }
+        }
+      }
+    }
+  }
+  .hot{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-top: 20px;
+    .hotCard{
+      width: 200px;
+      background: #f8f8f8;
+      flex-shrink:0;
+      margin-left: 28px;
+      border-radius: 20px;
+      padding: 20px 0;
+      &:last-child{
+        margin-right: 28px;
+      }
+      .cardImage{
+        display: block;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin: 0 auto;
+      }
+      .chat{
+        padding:20px 20px 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        text-align: center;
+      }
+      .fans{
+        font-size: 28px;
+        color: #999;
+        text-align: center;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        text-align: center;
+        padding:0 20px 0;
+      }
+      .follow{
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        color: #fff;
+        background: #51A9FC;
+        border-radius: 40px;
+        margin: 20px auto 0;
+        font-size: 28px;
+        padding: 0 20px;
+        white-space: nowrap;
+        width: min-content;
+      }
+    }
+  }
+  .index-list{
+    .part{
+      padding-bottom: 0;
+    }
+    .more{
+      text-align: center;
+      font-size: 32px;
+      padding: 20px 0;
+      margin-bottom: 20px;
+    }
+  }
+  .no-more{
+    text-align:center;
+    color:#666;
+    padding: 200px 0;
+    .icon{
+      font-size: 80px;
+    }
+  }
+  .importantBtn{
+    position: fixed;
+    right: 40px;
+    bottom: 200px;
+    width: 100px;
+    height:100px;
+    text-align: center;
+    line-height: 100px;
+    display: block;
+    font-size: 50px;
+    font-weight: 700;
+    background: linear-gradient(-45deg, #1ED4FF, #51A9FC);
+    box-shadow: 0 5px 40px rgba(0, 0, 0, 0.08);
+    color: #fff;
+    border-radius: 50%;
+  }
+  .sendPanel{
+    padding: 10px 100px;
+    display: flex;
+    justify-content:space-around;
+    .send{
+      text-align: center;
+      color: #999;
+      font-size: 28px;
+      margin: 20px;
+      .icon{
+        width: 100px;
+        height: 100px;
+        text-align: center;
+        line-height: 100px;
+        color: #fff;
+        font-size: 50px;
+        background: linear-gradient(-45deg, #1ED4FF, #51A9FC);
+        border-radius: 50%;
+        display: block;
+        margin: 20px auto;
+        &.icon-cat_bell_collar{
+          background: linear-gradient(-45deg, #ffa265, #ff7189);
+        }
+      }
+    }
+  }
+  .guideMask{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,.9);
+    z-index: 999;
+    .guide1{
+      padding-top: 180px;
+      .guideText{
+        color: #fff;
+        padding: 0 100px;
+        text-align: right;
+        font-size: 32px;
+      }
+      .cardImage{
+        width: 600px;
+        border-radius: 20px;
+        margin: 20px auto;
+        display: block;
+      }
+    }
+    .guide2{
+      padding-top: 180px;
+      .guideText{
+        color: #fff;
+        padding: 0 100px;
+        text-align: right;
+        font-size: 32px;
+      }
+      .cardImage{
+        width: 600px;
+        border-radius: 20px;
+        margin: 20px auto;
+        display: block;
+      }
+    }
+    .guideImage{
+      width: 300px;
+      position: absolute;
+      left: 225px;
+      bottom: 600px;
+    }
+    .guideBtn{
+      display: flex;
+      width: 100%;
+      position: absolute;
+      left: 0;
+      bottom: 400px;
+      justify-content:center;
+      .next{
+        font-size: 34px;
+        color: #fff;
+        padding: 0 30px;
+        height: 70px;
+        line-height: 70px;
+        border-radius: 70px;
+        background: #51A9FC;
+        margin: 0 20px;
+      }
+    }
+  }
+  .hide{
+    display: none;
+  }
+}
